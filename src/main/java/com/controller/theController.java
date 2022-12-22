@@ -1,6 +1,5 @@
 package com.controller;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
@@ -74,14 +73,14 @@ public class theController {
 		int id = Integer.valueOf(req.getParameter("id"));
 		String title = req.getParameter("title");
 		String note = req.getParameter("note");
-		
+
 		System.out.println(id);
 		System.out.println(title);
 		System.out.println(note);
-		
+
 		noteDao d = new noteDaoImpl();
 		d.updateNote(id,title,note);
-		
+
 		return "redirect:/viewAllNotes";
 	}
 

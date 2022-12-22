@@ -3,8 +3,6 @@ package com.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import com.model.Data;
 
 public interface noteDao {
